@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="CamadaApresentacao/CamadaApresentacao.csproj" Id="bc03af3e-134c-4712-b639-d4dcf1e7d963" />
+  <Project Path="CamadaDeDados/CamadaDeDados.csproj" Id="50cc4a19-7df0-434b-902d-3519e0a11b8b" />
+  <Project Path="CamadaDeNagocio/CamadaDeNegocio.csproj" Id="11fa2b5f-7805-442e-a7d1-839522c2d330" />
+  <Project Path="GestorEscolar.csproj" Id="913b2d19-1e41-4610-bb56-38a7cb2074f6" />
+</Solution>

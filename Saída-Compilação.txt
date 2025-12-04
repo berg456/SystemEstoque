@@ -1,0 +1,5 @@
+﻿Compilação iniciada...
+1>------ Compilação iniciada: Projeto: Livraria, Configuração: Debug Any CPU ------
+1>  Livraria -> C:\Users\lindebergue\source\repos\Livraria\Livraria\bin\Debug\Livraria.exe
+========== Compilação: 1 bem-sucedida, 0 com falha, 0 atualizada, 0 ignorada ==========
+========== Compilação começou em 9:02 AM e levou 00,558 segundos ==========

@@ -1,0 +1,75 @@
+﻿body {
+    background-color: #148b0b;
+}
+#MedGV{
+    position:relative;
+    left:10px;
+    top: 0px;
+    width: 654px;
+}
+
+#BigCont {
+    background-color: white;
+    height: 85%;
+    width: 85%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    opacity: 80%;
+    border-radius: 10px;
+}
+#MMan {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(9, 175, 92);
+    height: 30px;
+    border-radius: 5px;
+    width:150px;
+}
+#MType {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(9, 175, 92);
+    height: 30px;
+    border-radius: 5px;
+    width:150px;
+}
+
+#Ti {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #148b0b;
+    position: relative;
+    left: 45%;
+}
+
+#I {
+    background-image: url(img/3.png);
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: 47%;
+}
+
+input {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(9, 175, 92);
+    height: 25px;
+    border-radius: 5px;
+}
+
+button {
+    height: 30px;
+    width: 70px;
+    color: white;
+    background-color: #148b0b;
+    border-radius: 10px;
+    border: none;
+}
+
+#BtDiv {
+    position: relative;
+    left: 40%;
+}
+
+#Bloc1 {
+    position: relative;
+    left: 10%;
+}
