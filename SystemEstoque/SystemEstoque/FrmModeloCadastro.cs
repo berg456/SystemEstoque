@@ -59,5 +59,19 @@ namespace SystemEstoque
         {
             alteraBotoes(1);
         }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            Close();
+            
+        }
+
+        private void FrmModeloCadastro_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.SelectNextControl(this.ActiveControl, !e.Shift, true, true, true);
+            }
+        }
     }
 }

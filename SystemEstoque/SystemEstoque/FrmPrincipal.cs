@@ -1,8 +1,11 @@
-﻿using System;
+﻿using DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -22,7 +25,7 @@ namespace SystemEstoque
         //METODO PARA MOSTRAR FORMULARIO DE LOGO Al INICIAR ----------------------------------------------------------
         public void MostrarFormLogo()
         {
-            openChildForm(new FrmLogo());
+            openChildForm(new FormLogo());
         }
 
 
@@ -148,6 +151,31 @@ namespace SystemEstoque
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
             MostrarFormLogo();
+            //verifica conexao com o banco
+            try
+            {
+                StreamReader arquivo = new StreamReader("ConfiguracaoBanco.txt");
+                DadosDaConexao.servidor = arquivo.ReadLine();
+                DadosDaConexao.banco = arquivo.ReadLine();
+                DadosDaConexao.usuario = arquivo.ReadLine();
+                DadosDaConexao.senha = arquivo.ReadLine();
+                arquivo.Close();
+                //testar a conexao
+                SqlConnection conexao = new SqlConnection();
+                conexao.ConnectionString = DadosDaConexao.StringDeConexao;
+                conexao.Open();
+                conexao.Close();
+            }
+            catch (SqlException errob)
+            {
+                MessageBox.Show("Erro ao se conectar no banco de dados \n" +
+                                "Acesse as configurações do banco de dados e informe os parâmetros de conexao");
+            }
+            catch (Exception erros)
+            {
+                MessageBox.Show(erros.Message);
+            }
+
         }
 
         private void tmFechaHora_Tick(object sender, EventArgs e)
@@ -166,6 +194,7 @@ namespace SystemEstoque
             FrmConsultaCategoria fm = new FrmConsultaCategoria();
             fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             //AbrirFormEnPanel(fm);
+
         }
 
         private void btnSubCategoria_Click(object sender, EventArgs e)
@@ -178,6 +207,7 @@ namespace SystemEstoque
             FrmCadSubCategoria fm = new FrmCadSubCategoria();
             fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             //AbrirFormEnPanel(fm);
+            
 
         }
 
@@ -192,6 +222,76 @@ namespace SystemEstoque
             fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             //AbrirFormEnPanel(fm);
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FrmCadUnidadeDeMedida());
+            //..
+            //your codes
+            //..
+            hideSubMenu();
+            FrmCadUnidadeDeMedida fm = new FrmCadUnidadeDeMedida();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            //AbrirFormEnPanel(fm);
+
+        }
+
+        private void btnConUnidMedida_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FrmConUnidadeMedida());
+            //..
+            //your codes
+            //..
+            hideSubMenu();
+            FrmConUnidadeMedida fm = new FrmConUnidadeMedida();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            //AbrirFormEnPanel(fm);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        { //btnProdutos
+            openChildForm(new FrmCadProduto());
+            //..
+            //your codes
+            //..
+            hideSubMenu();
+            FrmCadProduto fm = new FrmCadProduto();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            //AbrirFormEnPanel(fm);
+        }
+
+        private void btnConProduto_Click(object sender, EventArgs e)
+        {
+            FrmConsultaProduto f = new FrmConsultaProduto();
+            f.ShowDialog();
+            f.Dispose();
+            // openChildForm(new FrmConsultaProduto());
+            //..
+            //your codes
+            //..
+            // hideSubMenu();
+            // FrmConsultaProduto fm = new FrmConsultaProduto();
+            // fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            //AbrirFormEnPanel(fm);
+        }
+
+        private void btnConfigBancoDados_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FrmConfigBancoDados());
+            //..
+            //your codes
+            //..
+            hideSubMenu();
+            FrmConfigBancoDados fm = new FrmConfigBancoDados();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            //AbrirFormEnPanel(fm);
+            
+        }
+
+        private void btnCalculadora_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("calc");
         }
     }
 }

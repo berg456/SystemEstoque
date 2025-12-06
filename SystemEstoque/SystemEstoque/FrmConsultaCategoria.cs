@@ -34,7 +34,7 @@ namespace SystemEstoque
             dgvDados.Columns[0].HeaderText = "Código";
             dgvDados.Columns[0].Width = 300;
             dgvDados.Columns[1].HeaderText = "Categoria";
-            dgvDados.Columns[1].Width = 550;
+            dgvDados.Columns[1].Width = 300;
         }
         
        
@@ -48,6 +48,9 @@ namespace SystemEstoque
             }
         }
 
-        
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

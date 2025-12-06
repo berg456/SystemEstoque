@@ -34,6 +34,7 @@
             this.txtSnomeSubCategoria = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.SuspendLayout();
             // 
             // btnCancelar
@@ -209,10 +210,22 @@
             this.gunaLabel3.TabIndex = 8;
             this.gunaLabel3.Text = "Código";
             // 
+            // gunaLabel4
+            // 
+            this.gunaLabel4.AutoSize = true;
+            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.gunaLabel4.Location = new System.Drawing.Point(62, 31);
+            this.gunaLabel4.Name = "gunaLabel4";
+            this.gunaLabel4.Size = new System.Drawing.Size(644, 45);
+            this.gunaLabel4.TabIndex = 9;
+            this.gunaLabel4.Text = "TELA DE CADASTRO DE SUBCATEGORIAS";
+            // 
             // FrmCadSubCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.ClientSize = new System.Drawing.Size(1440, 771);
+            this.Controls.Add(this.gunaLabel4);
             this.Controls.Add(this.gunaLabel3);
             this.Controls.Add(this.gunaLabel2);
             this.Controls.Add(this.txtSnomeSubCategoria);
@@ -228,6 +241,7 @@
             this.Controls.SetChildIndex(this.txtSnomeSubCategoria, 0);
             this.Controls.SetChildIndex(this.gunaLabel2, 0);
             this.Controls.SetChildIndex(this.gunaLabel3, 0);
+            this.Controls.SetChildIndex(this.gunaLabel4, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,5 +254,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtSnomeSubCategoria;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
+        private Guna.UI.WinForms.GunaLabel gunaLabel4;
     }
 }

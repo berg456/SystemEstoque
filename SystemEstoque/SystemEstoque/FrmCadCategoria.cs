@@ -130,5 +130,10 @@ namespace SystemEstoque
             alteraBotoes(2);
             txtNome.Enabled = true;
         }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

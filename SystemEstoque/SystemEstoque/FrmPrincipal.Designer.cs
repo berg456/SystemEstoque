@@ -42,9 +42,9 @@
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnSobre = new System.Windows.Forms.Button();
             this.pnlFerramentasSubMenu = new System.Windows.Forms.Panel();
-            this.button17 = new System.Windows.Forms.Button();
+            this.btnCalculadora = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
+            this.btnConfigBancoDados = new System.Windows.Forms.Button();
             this.btnFerramentas = new System.Windows.Forms.Button();
             this.pnlRelatorioSubMenu = new System.Windows.Forms.Panel();
             this.button11 = new System.Windows.Forms.Button();
@@ -132,6 +132,7 @@
             this.button5.Text = "Produto";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -152,6 +153,7 @@
             this.button4.Text = "Unidade de Medida";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // btnSubCategoria
             // 
@@ -283,9 +285,9 @@
             // pnlFerramentasSubMenu
             // 
             this.pnlFerramentasSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.pnlFerramentasSubMenu.Controls.Add(this.button17);
+            this.pnlFerramentasSubMenu.Controls.Add(this.btnCalculadora);
             this.pnlFerramentasSubMenu.Controls.Add(this.button18);
-            this.pnlFerramentasSubMenu.Controls.Add(this.button19);
+            this.pnlFerramentasSubMenu.Controls.Add(this.btnConfigBancoDados);
             this.pnlFerramentasSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlFerramentasSubMenu.Location = new System.Drawing.Point(0, 1950);
             this.pnlFerramentasSubMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -293,25 +295,26 @@
             this.pnlFerramentasSubMenu.Size = new System.Drawing.Size(349, 200);
             this.pnlFerramentasSubMenu.TabIndex = 13;
             // 
-            // button17
+            // btnCalculadora
             // 
-            this.button17.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button17.FlatAppearance.BorderSize = 0;
-            this.button17.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.button17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.ForeColor = System.Drawing.Color.Silver;
-            this.button17.Location = new System.Drawing.Point(0, 124);
-            this.button17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button17.Name = "button17";
-            this.button17.Padding = new System.Windows.Forms.Padding(52, 0, 0, 0);
-            this.button17.Size = new System.Drawing.Size(349, 62);
-            this.button17.TabIndex = 2;
-            this.button17.Text = "Calculadora";
-            this.button17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.UseVisualStyleBackColor = true;
+            this.btnCalculadora.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCalculadora.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCalculadora.FlatAppearance.BorderSize = 0;
+            this.btnCalculadora.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.btnCalculadora.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.btnCalculadora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalculadora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalculadora.ForeColor = System.Drawing.Color.Silver;
+            this.btnCalculadora.Location = new System.Drawing.Point(0, 124);
+            this.btnCalculadora.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCalculadora.Name = "btnCalculadora";
+            this.btnCalculadora.Padding = new System.Windows.Forms.Padding(52, 0, 0, 0);
+            this.btnCalculadora.Size = new System.Drawing.Size(349, 62);
+            this.btnCalculadora.TabIndex = 2;
+            this.btnCalculadora.Text = "Calculadora";
+            this.btnCalculadora.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCalculadora.UseVisualStyleBackColor = true;
+            this.btnCalculadora.Click += new System.EventHandler(this.btnCalculadora_Click);
             // 
             // button18
             // 
@@ -333,25 +336,26 @@
             this.button18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button18.UseVisualStyleBackColor = true;
             // 
-            // button19
+            // btnConfigBancoDados
             // 
-            this.button19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button19.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button19.FlatAppearance.BorderSize = 0;
-            this.button19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.button19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.ForeColor = System.Drawing.Color.Silver;
-            this.button19.Location = new System.Drawing.Point(0, 0);
-            this.button19.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button19.Name = "button19";
-            this.button19.Padding = new System.Windows.Forms.Padding(52, 0, 0, 0);
-            this.button19.Size = new System.Drawing.Size(349, 62);
-            this.button19.TabIndex = 0;
-            this.button19.Text = "Config. do Banco de Dados";
-            this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button19.UseVisualStyleBackColor = true;
+            this.btnConfigBancoDados.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConfigBancoDados.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnConfigBancoDados.FlatAppearance.BorderSize = 0;
+            this.btnConfigBancoDados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.btnConfigBancoDados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.btnConfigBancoDados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfigBancoDados.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfigBancoDados.ForeColor = System.Drawing.Color.Silver;
+            this.btnConfigBancoDados.Location = new System.Drawing.Point(0, 0);
+            this.btnConfigBancoDados.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnConfigBancoDados.Name = "btnConfigBancoDados";
+            this.btnConfigBancoDados.Padding = new System.Windows.Forms.Padding(52, 0, 0, 0);
+            this.btnConfigBancoDados.Size = new System.Drawing.Size(349, 62);
+            this.btnConfigBancoDados.TabIndex = 0;
+            this.btnConfigBancoDados.Text = "Config. do Banco de Dados";
+            this.btnConfigBancoDados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConfigBancoDados.UseVisualStyleBackColor = true;
+            this.btnConfigBancoDados.Click += new System.EventHandler(this.btnConfigBancoDados_Click);
             // 
             // btnFerramentas
             // 
@@ -754,6 +758,7 @@
             this.btnConProduto.Text = "Produto";
             this.btnConProduto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConProduto.UseVisualStyleBackColor = true;
+            this.btnConProduto.Click += new System.EventHandler(this.btnConProduto_Click);
             // 
             // btnConUnidMedida
             // 
@@ -774,6 +779,7 @@
             this.btnConUnidMedida.Text = "Unidade de Medida";
             this.btnConUnidMedida.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConUnidMedida.UseVisualStyleBackColor = true;
+            this.btnConUnidMedida.Click += new System.EventHandler(this.btnConUnidMedida_Click);
             // 
             // btnConSubCategoria
             // 
@@ -1049,9 +1055,9 @@
         private System.Windows.Forms.Button btnCadastro;
         private System.Windows.Forms.Button btnSobre;
         private System.Windows.Forms.Panel pnlFerramentasSubMenu;
-        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button btnCalculadora;
         private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button btnConfigBancoDados;
         private System.Windows.Forms.Button btnFerramentas;
         private System.Windows.Forms.Panel pnlRelatorioSubMenu;
         private System.Windows.Forms.Button button11;

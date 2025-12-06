@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SystemEstoque
 {
-    public partial class FrmLogo : Form
+    public partial class FormLogo : Form
     {
-        public FrmLogo()
+        public FormLogo()
         {
             InitializeComponent();
         }

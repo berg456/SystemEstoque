@@ -1,6 +1,6 @@
 ﻿namespace SystemEstoque
 {
-    partial class FrmLogo
+    partial class FormLogo
     {
         /// <summary>
         /// Required designer variable.

@@ -35,6 +35,7 @@
             this.btnAlterar = new Guna.UI2.WinForms.Guna2Button();
             this.btnSalvar = new Guna.UI2.WinForms.Guna2Button();
             this.btnNovo = new Guna.UI2.WinForms.Guna2Button();
+            this.btnFechar = new System.Windows.Forms.Button();
             this.pnlBotoes.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,9 +49,10 @@
             this.pnlBotoes.Controls.Add(this.btnSalvar);
             this.pnlBotoes.Controls.Add(this.btnNovo);
             this.pnlBotoes.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBotoes.Location = new System.Drawing.Point(0, 431);
+            this.pnlBotoes.Location = new System.Drawing.Point(0, 663);
+            this.pnlBotoes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlBotoes.Name = "pnlBotoes";
-            this.pnlBotoes.Size = new System.Drawing.Size(960, 70);
+            this.pnlBotoes.Size = new System.Drawing.Size(1440, 108);
             this.pnlBotoes.TabIndex = 0;
             // 
             // btnLocalizar
@@ -65,10 +67,11 @@
             this.btnLocalizar.Image = global::SystemEstoque.Properties.Resources._17search;
             this.btnLocalizar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLocalizar.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnLocalizar.Location = new System.Drawing.Point(162, 13);
+            this.btnLocalizar.Location = new System.Drawing.Point(243, 20);
+            this.btnLocalizar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLocalizar.Name = "btnLocalizar";
             this.btnLocalizar.ShadowDecoration.Parent = this.btnLocalizar;
-            this.btnLocalizar.Size = new System.Drawing.Size(156, 45);
+            this.btnLocalizar.Size = new System.Drawing.Size(234, 69);
             this.btnLocalizar.TabIndex = 38;
             this.btnLocalizar.Text = "     LOCALIZAR";
             // 
@@ -84,10 +87,11 @@
             this.btnCancelar.Image = global::SystemEstoque.Properties.Resources.Cancelar__2_;
             this.btnCancelar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCancelar.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnCancelar.Location = new System.Drawing.Point(798, 13);
+            this.btnCancelar.Location = new System.Drawing.Point(1197, 20);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.ShadowDecoration.Parent = this.btnCancelar;
-            this.btnCancelar.Size = new System.Drawing.Size(156, 45);
+            this.btnCancelar.Size = new System.Drawing.Size(234, 69);
             this.btnCancelar.TabIndex = 37;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -104,10 +108,11 @@
             this.btnExcluir.Image = global::SystemEstoque.Properties.Resources.bin;
             this.btnExcluir.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnExcluir.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnExcluir.Location = new System.Drawing.Point(639, 13);
+            this.btnExcluir.Location = new System.Drawing.Point(958, 20);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.ShadowDecoration.Parent = this.btnExcluir;
-            this.btnExcluir.Size = new System.Drawing.Size(156, 45);
+            this.btnExcluir.Size = new System.Drawing.Size(234, 69);
             this.btnExcluir.TabIndex = 36;
             this.btnExcluir.Text = "    EXCLUIR";
             // 
@@ -123,10 +128,11 @@
             this.btnAlterar.Image = global::SystemEstoque.Properties.Resources.author_48;
             this.btnAlterar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnAlterar.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnAlterar.Location = new System.Drawing.Point(321, 13);
+            this.btnAlterar.Location = new System.Drawing.Point(482, 20);
+            this.btnAlterar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.ShadowDecoration.Parent = this.btnAlterar;
-            this.btnAlterar.Size = new System.Drawing.Size(156, 45);
+            this.btnAlterar.Size = new System.Drawing.Size(234, 69);
             this.btnAlterar.TabIndex = 35;
             this.btnAlterar.Text = "  EDITAR";
             // 
@@ -142,10 +148,11 @@
             this.btnSalvar.Image = global::SystemEstoque.Properties.Resources.salvar_2;
             this.btnSalvar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSalvar.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnSalvar.Location = new System.Drawing.Point(480, 13);
+            this.btnSalvar.Location = new System.Drawing.Point(720, 20);
+            this.btnSalvar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.ShadowDecoration.Parent = this.btnSalvar;
-            this.btnSalvar.Size = new System.Drawing.Size(156, 45);
+            this.btnSalvar.Size = new System.Drawing.Size(234, 69);
             this.btnSalvar.TabIndex = 34;
             this.btnSalvar.Text = "   SALVAR";
             // 
@@ -161,22 +168,42 @@
             this.btnNovo.Image = global::SystemEstoque.Properties.Resources._8684028_folder_file_document_add_new_icon;
             this.btnNovo.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnNovo.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnNovo.Location = new System.Drawing.Point(3, 13);
+            this.btnNovo.Location = new System.Drawing.Point(4, 20);
+            this.btnNovo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.ShadowDecoration.Parent = this.btnNovo;
-            this.btnNovo.Size = new System.Drawing.Size(156, 45);
+            this.btnNovo.Size = new System.Drawing.Size(234, 69);
             this.btnNovo.TabIndex = 33;
             this.btnNovo.Text = " NOVO";
             // 
+            // btnFechar
+            // 
+            this.btnFechar.BackColor = System.Drawing.Color.Transparent;
+            this.btnFechar.FlatAppearance.BorderSize = 0;
+            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFechar.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnFechar.Location = new System.Drawing.Point(4, 3);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(37, 38);
+            this.btnFechar.TabIndex = 10;
+            this.btnFechar.Text = "X";
+            this.btnFechar.UseVisualStyleBackColor = false;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            // 
             // FrmModeloCadastro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(960, 501);
+            this.ClientSize = new System.Drawing.Size(1440, 771);
+            this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.pnlBotoes);
+            this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmModeloCadastro";
             this.Text = "FrmModeloCadastro";
             this.Load += new System.EventHandler(this.FrmModeloCadastro_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmModeloCadastro_KeyDown);
             this.pnlBotoes.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -191,5 +218,6 @@
         protected Guna.UI2.WinForms.Guna2Button btnSalvar;
         protected Guna.UI2.WinForms.Guna2Button btnNovo;
         protected Guna.UI2.WinForms.Guna2Button btnLocalizar;
+        private System.Windows.Forms.Button btnFechar;
     }
 }

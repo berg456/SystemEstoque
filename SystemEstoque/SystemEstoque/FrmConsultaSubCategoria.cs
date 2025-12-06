@@ -1,18 +1,11 @@
 ﻿using BLL;
 using DAL;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SystemEstoque
-{   
-    
+{
+
     public partial class FrmConsultaSubCategoria : Form
     {
         public int codigo = 0;
@@ -50,6 +43,12 @@ namespace SystemEstoque
                 this.codigo = Convert.ToInt32(dgvDados.Rows[e.RowIndex].Cells[0].Value);
                 this.Close();
             }
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            Close();
+            
         }
     }
 }

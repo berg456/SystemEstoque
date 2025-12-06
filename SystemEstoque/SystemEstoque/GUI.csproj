@@ -67,11 +67,29 @@
     <Compile Include="FrmCadCategoria.Designer.cs">
       <DependentUpon>FrmCadCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCadProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadProduto.Designer.cs">
+      <DependentUpon>FrmCadProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCadSubCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmCadSubCategoria.Designer.cs">
       <DependentUpon>FrmCadSubCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadUnidadeDeMedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadUnidadeDeMedida.Designer.cs">
+      <DependentUpon>FrmCadUnidadeDeMedida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConfigBancoDados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConfigBancoDados.Designer.cs">
+      <DependentUpon>FrmConfigBancoDados.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmConsultaCategoria.cs">
       <SubType>Form</SubType>
@@ -79,17 +97,29 @@
     <Compile Include="FrmConsultaCategoria.Designer.cs">
       <DependentUpon>FrmConsultaCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmConsultaProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaProduto.Designer.cs">
+      <DependentUpon>FrmConsultaProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmConsultaSubCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmConsultaSubCategoria.Designer.cs">
       <DependentUpon>FrmConsultaSubCategoria.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmLogo.cs">
+    <Compile Include="FrmConUnidadeMedida.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLogo.Designer.cs">
-      <DependentUpon>FrmLogo.cs</DependentUpon>
+    <Compile Include="FrmConUnidadeMedida.Designer.cs">
+      <DependentUpon>FrmConUnidadeMedida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogo.Designer.cs">
+      <DependentUpon>FormLogo.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmModeloCadastro.cs">
       <SubType>Form</SubType>
@@ -108,17 +138,32 @@
     <EmbeddedResource Include="FrmCadCategoria.resx">
       <DependentUpon>FrmCadCategoria.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadProduto.resx">
+      <DependentUpon>FrmCadProduto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCadSubCategoria.resx">
       <DependentUpon>FrmCadSubCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadUnidadeDeMedida.resx">
+      <DependentUpon>FrmCadUnidadeDeMedida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConfigBancoDados.resx">
+      <DependentUpon>FrmConfigBancoDados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConsultaCategoria.resx">
       <DependentUpon>FrmConsultaCategoria.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaProduto.resx">
+      <DependentUpon>FrmConsultaProduto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmConsultaSubCategoria.resx">
       <DependentUpon>FrmConsultaSubCategoria.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmLogo.resx">
-      <DependentUpon>FrmLogo.cs</DependentUpon>
+    <EmbeddedResource Include="FrmConUnidadeMedida.resx">
+      <DependentUpon>FrmConUnidadeMedida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogo.resx">
+      <DependentUpon>FormLogo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmModeloCadastro.resx">
       <DependentUpon>FrmModeloCadastro.cs</DependentUpon>
@@ -249,6 +294,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ic_receipt_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Limpar %282%29.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limpar 32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backup_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\secure-creditcard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1120619_businessman_client_man_manager_person_icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\workstation1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconBd.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
